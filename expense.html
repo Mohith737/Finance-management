@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+</head>
+<body>
+    <h1>Expenses</h1>
+    <ul>
+        {% for expense in expenses %}
+            <li>{{ expense.amount }} - {{ expense.category }} - {{ expense.date }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
